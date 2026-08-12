@@ -1,5 +1,5 @@
 #include <iostream>
-#include<vector>
+#include <vector>
 using namespace std;
 
 class Solution {
@@ -18,6 +18,7 @@ public:
             if (mid == 0) {
                 if (nums[0] != nums[1])
                     return nums[0];
+
                 st = mid + 1;
                 continue;
             }
@@ -25,6 +26,7 @@ public:
             if (mid == n - 1) {
                 if (nums[n - 1] != nums[n - 2])
                     return nums[n - 1];
+
                 end = mid - 1;
                 continue;
             }
@@ -41,6 +43,7 @@ public:
                 else
                     end = mid - 1;
             }
+
             // EVEN CASE
             else {
                 if (nums[mid] == nums[mid - 1])
@@ -54,6 +57,13 @@ public:
     }
 };
 
-int main(){
-    
+int main() {
+    Solution obj;
+
+    vector<int> nums = {1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6};
+
+    cout << "Single non-duplicate element: "
+         << obj.singleNonDuplicate(nums) << endl;
+
+    return 0;
 }
