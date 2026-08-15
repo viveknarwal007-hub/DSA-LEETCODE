@@ -12,7 +12,7 @@ class Solution {
                 if(i > 0 && nums[i] == nums[i-1]) continue ;
                 int j = i+1 ,k = n-1;
                 while(j < k){
-                    if(const int sum = nums[i] + nums[j] + nums[k]; sum < 0 ){
+                    if(const int sum = nums[i] + nums[j] + nums[k]  < 0 ){
                         j++ ;
                     }
                     else if(sum > 0 ){
