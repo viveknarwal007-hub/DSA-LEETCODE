@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     vector<int> majorityElement(vector<int>& nums) {
@@ -33,3 +36,13 @@ public:
         return ans; 
     }
 };
+int main() {
+    vector<int> nums = {3, 2, 3};
+    Solution obj;
+    vector<int> ans = obj.majorityElement(nums);
+    for(int x : ans) {
+        cout << x << " ";
+    }
+    cout << endl;
+    return 0;
+}
