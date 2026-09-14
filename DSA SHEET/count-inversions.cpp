@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
     int cnt = 0;
   public:
@@ -58,3 +60,11 @@ class Solution {
         return cnt;
     }
 };
+
+int main() {
+    vector<int> arr = {3, 2, 4, 1, 3};
+    Solution obj;
+    int ans = obj.inversionCount(arr);
+    cout << ans << endl;
+    return 0;
+}
