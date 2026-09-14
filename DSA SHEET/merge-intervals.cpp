@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& nums) {
@@ -21,3 +24,13 @@ public:
         return ans;
     }
 };
+int main() {
+    vector<vector<int>> nums = {{1,3},{2,6},{8,10},{15,18}};
+    Solution obj;
+    vector<vector<int>> ans = obj.merge(nums);
+    for(auto x : ans) {
+        cout << "[" << x[0] << "," << x[1] << "] ";
+    }
+    cout << endl;
+    return 0;
+}
